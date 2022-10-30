@@ -1,0 +1,61 @@
+.navbar {
+  background-color: #161616;
+  height: 110px;
+  transition: 0.4s;
+
+  .logo-navbar {
+    margin-inline-start: 1em;
+    transition: 0.4s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .logo-connexion,
+  .logo-commander,
+  .logo-inscription{
+    margin-right: 2em;
+    transition: 0.4s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .me-auto.navbar-nav {
+    margin-left: 1.5em;
+  }
+
+  a.nav-link {
+    position: relative;
+    color: #fff !important;
+    font-size: 22px;
+    font-family: "Courgette", cursive;
+    letter-spacing: 0.0625em;
+    text-decoration: none !important;
+  }
+
+  a.nav-link:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  a.nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+}
+
+.scroll {
+  top: -120px;
+}
